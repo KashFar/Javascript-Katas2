@@ -1,0 +1,66 @@
+!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <!-- <script src="main.js"></script> -->
+</head>
+<body>
+    
+    <script>
+
+        function add (number1, number2){
+            return number1 + number2;
+        }
+        console.log(add(2,4));
+
+        function multiply (number1, number2){
+            let total= 0
+
+            for(let i = 0; i<number2 ;i++){
+                total= add(total, number1);
+            }
+            return total;
+        }
+        console.log(multiply(6,8));
+
+        function power (x,n){
+            let total= 1;
+            for(let i = 0; i<n ;i++){
+                total= multiply(total, x);
+            }
+            return total;
+        }
+        console.log(power(3,8));
+        console.log(power(4,3));
+
+        function factorial (x){
+            let total= 1
+
+            for(let i = 1; i<=x ;i++){
+                total= multiply(total,i);
+            }
+            return total;
+        }
+
+//Display the result of calling fibonacci(8), which should be 13:
+//0 1 1 2 3 5 8 [13] 21
+
+  /*      function fibonnacci(x){
+            let total= 0; a= 0; b=1;
+            for ( let i=2; i<c; i++){
+                
+                total= add (a,b)
+                a=
+            }
+        }
+        */
+
+    </script>
+
+
+</body>
+</html>
