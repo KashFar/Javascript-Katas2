@@ -50,6 +50,29 @@
 //0 1 1 2 3 5 8 [13] 21
 
         function fibonacci(x){
+            let total= 1; a= 0; b=1;
+            for ( let i=1; i<x; i++){
+                
+                total= add (a,b)
+                a=b
+                b=total
+            }
+            return a;
+        }
+        console.log(fibonacci(1));
+        console.log(fibonacci(2));
+        console.log(fibonacci(3));
+        console.log(fibonacci(4));
+        console.log(fibonacci(5));
+        console.log(fibonacci(6));
+        console.log(fibonacci(7));
+        console.log("check the fib 8 below equals 13")
+        console.log(fibonacci(8));
+        console.log("check the fib 8 above equals 13")
+        console.log(fibonacci(9));
+
+
+        /*function fibonacci(x){
             let total= 0; a= 0; b=1;
             for ( let i=2; i<x; i++){
                 
@@ -58,9 +81,8 @@
                 b=total
             }
             return total;
-        }
-        console.log(fibonacci(8));
-
+        } */
+        
     </script>
 
 
